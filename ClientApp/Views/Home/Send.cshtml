@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    @if (@ViewBag.SendStatus)
+    {
+        <div class="text-center bg-success">
+            <h1>@ViewBag.Message</h1>
+        </div>
+        
+    }
+    else{
+    <div class="text-center bg-danger">
+            <h1>@ViewBag.Message</h1>
+    </div>
+    }
+</div>

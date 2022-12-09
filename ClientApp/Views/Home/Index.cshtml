@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model EmailData
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" />
+</head>
+<style>
+    .input-validation-error{
+        border-color: red;
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">Введите даннные для отправки сообщения</h1>
+    <form asp-action="Send">
+        
+        <div class="form-group email-form">
+        <label class="label-form" asp-for="Email"></label>
+            <input class="form-taxt-custom" placeholder="example@gmail.com" asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        
+        <div class="form-group meaasge-form">
+        <label class="label-form" asp-for="Message"></label>
+        <input class="form-taxt-custom" type="text" placeholder="Enter a message..." asp-for="Message" />
+        <span asp-validation-for="Message" class="text-danger"></span>
+        </div>
+        
+        <div class="form-group button-form">
+            <button class="btn btn-primary custom-class" type="submit">Send</button>
+        </div>
+    </form>
+    
+    
+    
+
+</div>

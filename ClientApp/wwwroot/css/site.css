@@ -1,0 +1,50 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-group{
+    width: auto;
+}
+
+.email-form{
+    margin-top: 100px;
+}
+.meaasge-form {
+    margin-top: 50px;
+}
+
+.label-form {
+    margin-left: 50px;
+}
+
+.form-taxt-custom{
+    width: 300px;
+    height: 40px;
+    margin-right: 100px;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.custom-class {
+    width: 300px;
+    height: 40px;
+
+}
+
+.button-form{
+    margin-top: 50px;
+}
